@@ -2,7 +2,7 @@ publishDir = "docs"
 
 # Page settings
 
-baseurl = "http://crazy-eddie.github.io/"
+baseurl = "http://crazy-eddie.github.io/resume/"
 languageCode = "en-us"
 title = "Noah Roberts's Resume"
 theme = "hugo-orbit-theme"
@@ -55,8 +55,8 @@ disable404 = true
         [[params.contact.list]]
         class = "website"
         icon = "fa-globe"
-        url = "//crazy-eddie.io"
-        title = "crazy-eddie.io"
+        url = "//crazy-eddie.github.io"
+        title = "crazy-eddie.github.io"
 
         [[params.contact.list]]
         class = "linkedin"
