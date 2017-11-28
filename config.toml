@@ -1,0 +1,265 @@
+publishDir = "docs"
+
+# Page settings
+
+baseurl = "http://crazy-eddie.github.io/"
+languageCode = "en-us"
+title = "Noah Roberts's Resume"
+theme = "hugo-orbit-theme"
+#googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "My Resume"
+    author = "Noah Roberts"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Noah Roberts"
+        tagline = "Sr. Software Engineer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: roberts.noah@gmail.com"
+        title = "roberts.noah@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+13603590245"
+        title = "+13603590245"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//crazy-eddie.io"
+        title = "crazy-eddie.io"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "linkedin.com/in/noah-roberts-63b95535/"
+        title = "linkedin.com/in/noah-roberts-63b95535/"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/crazy-eddie"
+        title = "github.com/crazy-eddie"
+
+        
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BS Computer Science"
+        college = "St. Martin's University (was St. Martin's College)"
+        dates = "2002 - 2004"
+
+        [[params.education.list]]
+        degree = "AA General Studies"
+        college = "South Puget Sound Community College"
+        dates = "1999 - 2002"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "C++"
+        level = "Professional"
+
+        [[params.language.list]]
+        language = "C"
+        level = "Professional"
+
+        [[params.language.list]]
+        language = "Linux"
+        level = "Professional"
+
+        [[params.language.list]]
+        language = "Docker"
+        level = "Entry"
+
+        [[params.language.list]]
+        language = "golang"
+        level = "Entry"
+
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Dev-Ops"
+
+        [[params.interests.list]]
+        interest = "Software Engineering and Planning"
+
+        [[params.interests.list]]
+        interest = "Scientific Reading"
+
+	[[params.interests.list]]
+	interest = "Mountain Biking"
+
+        [[params.interests.list]]
+        interest = "Maker Community"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = """
+Veteran software engineer looking for a position that encourages growth and encourages active contribution.
+
+My dream job would be someone paying me to generate new innovations and prototypes."""
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Sr. Software Engineer"
+        dates = "Oct. 2015 - current"
+        company = "Aristocrat Technologies, Inc."
+        details = "Planning and execution of many small projects to create new slot machine games for mobile applications."
+
+        [[params.jobs.list]]
+        position = "Sabattical"
+        dates = "Oct. 2014 - Oct. 2015"
+        company = "None"
+        details = "Research on my own topics.  Included C++ updates, Haskel, Android development, and other things I'd not done before."
+
+        [[params.jobs.list]]
+        position = "Sr. Software Engineer"
+        dates = "Oct. 2012 - Oct. 2014"
+        company = "Interactive Intelligence"
+        details = "Under supervision of team leadership and peer review I was responsible for maintaining parts of large, legacy server systems written in C++. Maintenence efforts included feature addition, debugging (often with only logs available), and performance testing and enhancement. Assets I brought to the team included agile development methods including unit testing and strong understanding of C++ and design principles."
+
+        [[params.jobs.list]]
+        position = "Software Developer"
+        dates = "Aug. 2011 - Jul. 2012"
+        company = "Transaction Network Services"
+        details = "Served as member of a small team dedicated to anti-fraud and identity theft services written in C and in C++. Also aided in adoption of unit testing practices and the development of test utilities. Responsible for updating internal Java application to updated requirements imposed by data format changes."
+
+        [[params.jobs.list]]
+        position = "Sr. Software Engineer"
+        dates = "Jun. 2005 - Aug. 2011"
+        company = "Engineered Software"
+        details = "Served as technical lead on small team tasked with rewrite of flagship product: PIPE-FLO. Was responsible for design, coding policy, and aided and/or lead efforts to gather requirements and evaluate associated costs."
+
+	[[params.jobs.list]]
+	position = "IT Intern"
+	dates = "2004 - 2005"
+	company = "St. Martin's College"
+	details = "Served as primary expert on Unix systems and was responsible for many administrative tasks regarding them. Served as technical lead and contact for a large project to update dormitory security system to an electronic access system backed by computerized databases (Hirsch Velocity was the particular system). Had to implement utilities to merge security with student admissions and train point people in the use of the system."
+
+        [[params.jobs.list]]
+        position = "Half Owner"
+        dates = "2002 - 2004"
+        company = "Yelm Martial Arts Fitness Center"
+        details = """
+Served as equal partner in an effort to start a small business based upon martial arts training and retail of martial arts equipment. Had to work with vendors, customers, and lawyers on a regular basis. Was responsible for accounting, inventory and served as junior instructor.
+
+Business is still very much alive. Left to pursue my career as a software engineer."""
+
+
+
+
+
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "All public projects are on my gitlab.  Here's a couple highlights:"
+
+        [[params.projects.list]]
+        title = "Arduino Modern"
+        url = "https://github.com/crazy-eddie/arduino_modern"
+        tagline = "Modern C++ techniques leveraged for embedded development."
+
+        [[params.projects.list]]
+        title = "Experiments"
+        url = "https://github.com/crazy-eddie/experiments"
+        tagline = "Scratch area for weird stuff."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "C++"
+        level = "80%"
+                
+        [[params.skills.list]]
+        skill = "C"
+        level = "60%"
+
+	    [[param.skills.list]]
+	    skill = "Linux"
+
+        [[params.skills.list]]
+        skill = "GoLang"
+        level = "10%"
+
+	[[params.skills.list]]
+	skill = "Docker"
+	level = "30%"
+
+	[[params.skills.list]]
+	skill = "CI/CD"
+	level = "40%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+copyright = "Content (c) Noah Roberts.  Theme Orbit for Hugo (C) CCA 3.0 original owner."
